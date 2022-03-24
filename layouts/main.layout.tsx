@@ -16,17 +16,14 @@ const MainLayout: React.FC<layoutProps> = ({
 
     return (
         <Container>
-            <SidebarContainer style={{
-                minWidth: sidebarCollapsed?'270px':'80px',
-                maxWidth: sidebarCollapsed?'270px':'80px',
-            }}>{Sidebar}</SidebarContainer>
+            {Sidebar}
             <Wrapper style={{
                 width: sidebarCollapsed?
                     'calc(100vw - 270px)':
                     'calc(100vw - 80px)',
             }}>
-                <HeaderContainer>{Header}</HeaderContainer>
-                <ContentContainer>{Content}</ContentContainer>
+                {Header}
+                {Content}
             </Wrapper>
         </Container>
     );

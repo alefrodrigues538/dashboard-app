@@ -1,7 +1,8 @@
-import React, { ReactElement, SetStateAction } from 'react';
+import React, { ReactElement, useContext } from 'react';
 import Link from 'next/link'
 
 import { Container, DashboardLink }from './styles'
+import { SidebarContext } from './../../contexts/sidebarContext';
 
 type props = {
     title?: string,
@@ -12,10 +13,7 @@ type props = {
 const DashboardItem: React.FC<props> = ({
     title, icon, path
 }) => {
-
-    function changeState(setState: SetStateAction<any>, value: any) {
-        setState(value)
-    }
+    const { sidebarCollapsed} = useContext(SidebarContext)
 
     return (
         <Container>
@@ -24,7 +22,7 @@ const DashboardItem: React.FC<props> = ({
                         <span style={{fontSize: '1.75rem',}}>
                             {icon}
                         </span>
-                        {title}
+                        {sidebarCollapsed?title:''}
                     </DashboardLink>
                 </Link>
 

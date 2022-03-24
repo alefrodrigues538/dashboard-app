@@ -1,5 +1,8 @@
 :root {
   --white-900: #fff;
   --white-800: #eee;
-  --black-800: #222;
+
+  --black-800: #11375a;
+
+  --background-notification-badger: #eb106b;
 }

@@ -12,7 +12,7 @@ export const Container = styled.li`
         background-color: var(--white-900);
     }
     :active{
-        background-color: var(--white-800);
+        opacity: .5;
     }
 `;
 export const DashboardLink = styled.a`

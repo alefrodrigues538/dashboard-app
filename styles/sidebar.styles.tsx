@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const Container = styled.div`
+    background-color: var(--black-800);
+    height: 100vh;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: .2s;
+`
 
 export const SidebarLogoContainer = styled.div`
     height: 80px;
