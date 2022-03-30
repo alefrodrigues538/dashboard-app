@@ -1,12 +1,11 @@
+import { NextPage } from 'next';
 import React from 'react';
 
-import { Container } from './styles';
-
-const Dashboard: React.FC = () => {
+const Dashboard:NextPage = () => {
   return (
-      <Container>
+      <div>
           Dashboad
-      </Container>
+      </div>
   );
 }
 

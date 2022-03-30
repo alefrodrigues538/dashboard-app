@@ -1,7 +1,8 @@
+import { NextPage } from 'next';
 import React from 'react';
 
 
-const overview: React.FC = () => {
+const overview: NextPage = () => {
     return (
         <div>
             <h2>Overflow</h2>
